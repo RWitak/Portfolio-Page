@@ -1,0 +1,114 @@
+root, body {
+  padding: 0;
+  margin: 0;
+}
+
+#welcome-section {
+  height: 100vh;
+  width: 100%;
+
+  background: 
+  radial-gradient(farthest-corner at 40px 40px, 
+                  rgba(255, 255, 255, .5), 
+                  rgba(20, 255, 55, .7)), 
+  radial-gradient(closest-corner at 70vw 60vh,
+                  rgba(255, 2, 255, .2), 
+                  rgba(231, 228, 57, 0.7)), 
+  linear-gradient(120deg, 
+              rgba(0, 0, 0, .5), 
+              blue);
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
+  z-index: 0;
+}
+
+#welcome-grid {
+  position: relative;
+  display: grid;
+  grid-template: 
+    ". . . title ." min-content
+    ". avatar separator text ." 10rem /
+    minmax(0, 4fr) auto min-content auto minmax(0, 2fr); 
+    gap: 10px;
+}
+
+#title {
+  display: inline;
+  height: auto;  
+  width: auto;
+  grid-area: title;
+  color: crimson;
+  background-color: slateblue;
+  padding: 0;
+  margin: 0;
+}
+
+figure {
+  grid-area: avatar;
+  position: relative;
+  display: flex;
+  height: 10rem;
+  width: 10rem;
+  overflow: visible;
+  padding: 0;
+  margin: 0;
+}
+img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  width: inherit;
+  height: auto;
+  z-index: 1;
+  transform-origin: center 35%;
+  background: none;
+}
+img {
+  animation: open-close 1.2s ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes open-close {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+svg {
+  position: absolute;
+  transform: scale(.25);
+  transform-origin: bottom;
+  bottom: 1rem;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  width: inherit;
+  height: inherit;
+}
+
+#vertical-sep {
+  grid-area: separator;
+  width: 12px;
+  background-color: salmon;
+}
+#welcome-text {
+  grid-area: text;
+  overflow: hidden;
+}
+
+
+#screen-width {
+  position: absolute;
+  bottom: 0;
+  color: green;
+  width: 360px;
+  height: 1em;
+  margin-bottom: 1rem;
+  background-image: repeating-linear-gradient(45deg, black 3px 6px, white 6px 9px);
+}

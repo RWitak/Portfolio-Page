@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: khaki;
+}
+
+h1 {
+    text-align: center;
+    color: brown;
+} 
+
+.parallax-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    perspective: 20cm;
+    perspective-origin: center;
+}
+.parallax-bg {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: translateZ(0px);
+}
+.parallax-fg {
+    position: relative;
+    transform-origin: 0;
+    transform: translate3d(20cm, 0, 15cm) 
+               scale(.1) 
+               rotate3d(1, 0, 0, 90deg);
+}
+
+.parallax-fg h2 {
+    font-size: 36px; 
+}
+
+#separator-v {
+    height: 50%;
+    background-color: rgba(255, 255, 255, .25);
+    border: outset;
+    border-radius: 13px;
+    margin: 50vh auto;
+}
+
+#projects {
+    height: 100vh;
+    width: 100%;
+    background: blueviolet;
+}
+
+@media (min-width: 0px) {
+    
+            }
