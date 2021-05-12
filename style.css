@@ -13,7 +13,7 @@ h1 {
     text-align: center;
     color: brown;
 } 
-
+/* 
 .parallax-container {
     position: relative;
     display: flex;
@@ -24,7 +24,7 @@ h1 {
     overflow-y: scroll;
     perspective: 20cm;
     perspective-origin: center;
-}
+} */
 .parallax-bg {
     position: relative;
     top: 0;
