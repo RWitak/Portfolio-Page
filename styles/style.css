@@ -1,3 +1,5 @@
+@import "colors.css";
+
 * {
     margin: 0;
 }
@@ -6,13 +8,56 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
-    background-color: khaki;
+    height: 0;
+    color: var(--main-unimportant);
+    background-color: none;
 }
 
 h1 {
     text-align: center;
-    color: brown;
+    color: var(--main-unimportant);
 } 
+
+nav {
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    backface-visibility: hidden;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+    border-color: #111;
+    color: var(--lighter-highlight);
+    padding: 1% 5%;
+    background: linear-gradient(180deg,#CCC 0%,#222 49%, #000 51%,#222 100%);
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 0px rgba(255,255,255,.5),0px 1px 3px rgba(0,0,0,0.3);
+  }
+
+#separator-v {
+    height: 50%;
+    background-color: rgba(255, 255, 255, .25);
+    border: outset;
+    border-radius: 13px;
+    margin: 50vh auto;
+}
+
+#projects {
+    width: 100%;
+    background: var(--main-highlight);
+}
+
+footer {
+    text-align: end;
+}
+
+@media (min-width: 0px) {
+    
+}
 /* 
 .parallax-container {
     position: relative;
@@ -24,7 +69,7 @@ h1 {
     overflow-y: scroll;
     perspective: 20cm;
     perspective-origin: center;
-} */
+} 
 .parallax-bg {
     position: relative;
     top: 0;
@@ -59,22 +104,4 @@ h1 {
     width: 100vw;
     height: 1px;
     background-color: white;
-}
-
-#separator-v {
-    height: 50%;
-    background-color: rgba(255, 255, 255, .25);
-    border: outset;
-    border-radius: 13px;
-    margin: 50vh auto;
-}
-
-#projects {
-    height: 100vh;
-    width: 100%;
-    background: blueviolet;
-}
-
-@media (min-width: 0px) {
-    
-            }
+} */

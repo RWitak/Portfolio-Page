@@ -1,3 +1,5 @@
+@import "colors.css";
+
 root, body {
   padding: 0;
   margin: 0;
@@ -6,17 +8,20 @@ root, body {
 #welcome-section {
   height: 100vh;
   width: 100%;
-
+/* 
   background: 
   radial-gradient(farthest-corner at 40px 40px, 
-                  rgba(255, 255, 255, .5), 
-                  rgba(20, 255, 55, .7)), 
+                  var(--highlight-50),
+                  var(--contrast-50)
+  ), 
   radial-gradient(closest-corner at 70vw 60vh,
-                  rgba(255, 2, 255, .2), 
-                  rgba(231, 228, 57, 0.7)), 
-  linear-gradient(120deg, 
-              rgba(0, 0, 0, .5), 
-              blue);
+                  var(--main-contrast), 
+                  var(--lighter-highlight)), 
+  linear-gradient(0deg,
+              black, 
+              white); */
+              background: 
+              linear-gradient(40deg, var(--main-dark) 9%, var(--main-light) 33%, var(--main-contrast) calc(33% + 1px), var(--main-highlight) 72%, var(--main-dark) calc(72% + 1px), var(--main-light) 90%, var(--main-light) calc(90% + 1px), white 100%);
 
   display: flex;
   flex-direction: column;
@@ -41,8 +46,8 @@ root, body {
   height: auto;  
   width: auto;
   grid-area: title;
-  color: crimson;
-  background-color: #ff9;
+  color: white;
+  background-color: var(--main-light);
   padding: 0;
   margin: 0;
 }
@@ -104,11 +109,14 @@ svg {
 #vertical-sep {
   grid-area: separator;
   width: 12px;
-  background-color: salmon;
+  background-color: var(--main-dark);
 }
 #welcome-text {
   grid-area: text;
   overflow: hidden;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
 }
 
 

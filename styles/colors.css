@@ -1,0 +1,23 @@
+/* Global color variables */
+:root {
+    --charcoal: #3c4f5cff;
+    --maya-blue: #65c9ffff;
+    --dark-red: #92140cff;
+    --grullo: #9a8873ff;
+    --honey-yellow: #ffb20fff;
+
+    
+    --main-dark: var(--charcoal);
+    --main-light: var(--maya-blue);
+    --main-contrast: var(--dark-red);
+    --main-unimportant: var(--grullo); 
+    --main-highlight: var(--honey-yellow);
+
+    --dark-50: #3c4f5c88;
+    --light-50: #65c9ff88;
+    --contrast-50: #92140c88;
+    --unimportant-50: #9a887388;
+    --highlight-50: #ffb20f88;
+
+    --lighter-highlight: rgb(255, 221, 146);
+  }
