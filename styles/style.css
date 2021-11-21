@@ -1,42 +1,65 @@
 @import "colors.css";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
 
 * {
     margin: 0;
 }
 
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 10;
-    height: 0;
+    /* height: 0; */
     color: var(--main-unimportant);
-    background-color: none;
+    background: linear-gradient(rgba(255, 255, 255, .5), transparent);
 }
 
 h1 {
     text-align: center;
-    color: var(--main-unimportant);
+    font-size: 10vmin;
+    color: white;
 } 
 
+.inverted {
+    display: inline;
+    color: transparent;
+    background-image: linear-gradient(blue, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+    
 nav {
     padding-top: 1%;
+    width: 96vw;
+    margin: 2vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+#navlinks {
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: right;
+    display:flex; 
+}
+
+#logo {
+    display: block;
+    margin-inline: 10px;
+    font-family:  'Passion One', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 nav a {
-    backface-visibility: hidden;
     position: relative;
     cursor: pointer;
-    display: inline-block;
+    display: block;
     white-space: nowrap;
-    border-color: #111;
-    color: var(--lighter-highlight);
+    color: var(--main-contrast);
+    font-weight: bold;
+    text-decoration: none;
     padding: 1% 5%;
-    background: linear-gradient(180deg,#CCC 0%,#222 49%, #000 51%,#222 100%);
-    border-radius: 5px;
-    box-shadow: inset 0px 1px 0px rgba(255,255,255,.5),0px 1px 3px rgba(0,0,0,0.3);
-  }
+}
 
 #separator-v {
     height: 50%;
@@ -52,7 +75,7 @@ nav a {
 }
 
 footer {
-    text-align: end;
+    text-align: end ;
 }
 
 @media (min-width: 0px) {

@@ -1,5 +1,11 @@
 @import "colors.css";
 
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: xx-large;
+}
+
 .project-tiles {
     display: flex;
     flex-wrap: wrap;
@@ -45,4 +51,8 @@ figure {
     background-position: center center; 
     background-size: cover;
     box-shadow: var(--main-dark) 1px 1px 5px;
+}
+
+.tech-info {
+    font-style: italic;
 }
