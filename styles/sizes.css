@@ -1,0 +1,15 @@
+/* Global size variables */
+:root {
+    --dist: 8rem;
+    --half-dist: var(var(--dist) / 2)
+    --third-dist: var(var(--dist) / 3)
+    --quarter-dist: var(var(--dist) / 4)
+    --double-dist: var(var(--dist) * 2)
+    --triple-dist: var(var(--dist) * 3)
+    --quadruple-dist: var(var(--dist) * 4)
+
+    --fontsize-reg: 12rem;
+    --fontsize-large: 18rem;
+    --fontsize-small: 8rem;
+    --fontsize-xxl: 36rem;
+}
