@@ -1,9 +1,30 @@
 @import "colors.css";
 
-h2 {
+#projects-background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#projects-heading {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     font-size: xx-large;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    box-shadow: inset black 0 3px 5px;
+    padding: calc(var(--dist) / 12);
+}
+
+#projects {
+    width: 100%;
+    height: 100%;
+    background: url(
+        "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='42' height='42' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(290)'%3E%3Crect width='100%25' height='100%25' fill='rgba(60, 79, 92,1)'/%3E%3Cpath d='M0 40h-10v-60h60L40 0L30 10h-20v20z' fill='rgba(146, 20, 12,1)'/%3E%3Cpath d='M40 0v10h60v60L0 40L10 30h20v-20z' fill='rgba(255, 178, 15,1)'/%3E%3Cpath d='M40 0v10h60v60L0 40L10 30h20v-20z' fill='rgba(146, 20, 12,1)'/%3E%3Cpath d='M0 40h-10v-60h60L40 0L30 10h-20v20z' fill='rgba(255, 178, 15,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");    
+    background-attachment: fixed;
 }
 
 .project-tiles {

@@ -79,11 +79,6 @@ nav a {
     margin: 50vh auto;
 }
 
-#projects {
-    width: 100%;
-    background: var(--main-highlight);
-}
-
 footer {
     text-align: end;
 }
