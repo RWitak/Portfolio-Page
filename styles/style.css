@@ -3,22 +3,45 @@
 
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
-header {
+body {
+    overflow-x: hidden;
+}
+
+#navbar {
     position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     top: 0;
+    margin: 0;
     z-index: 10;
     /* height: 0; */
     color: var(--main-unimportant);
     background: linear-gradient(rgba(255, 255, 255, .5), transparent);
 }
 
+#logo {
+    margin-inline: 10px;
+    font-family: 'Passion One', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#navlinks {
+    width: auto;
+    padding-left: 20px;
+    margin-right: 10px;
+    flex-grow: 1;
+    justify-content: right;
+    display: flex;
+}
+
 h1 {
     text-align: center;
     font-size: 10vmin;
     color: white;
-} 
+}
 
 .inverted {
     display: inline;
@@ -27,27 +50,13 @@ h1 {
     background-clip: text;
     -webkit-background-clip: text;
 }
-    
+
 nav {
     padding-top: 1%;
     width: 96vw;
     margin: 2vw;
     display: flex;
     justify-content: space-between;
-}
-
-#navlinks {
-    width: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    justify-content: right;
-    display:flex; 
-}
-
-#logo {
-    display: block;
-    margin-inline: 10px;
-    font-family:  'Passion One', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 nav a {
@@ -75,12 +84,12 @@ nav a {
 }
 
 footer {
-    text-align: end ;
+    text-align: end;
 }
 
-@media (min-width: 0px) {
-    
-}
+@media (min-width: 0px) {}
+
+
 /* 
 .parallax-container {
     position: relative;
