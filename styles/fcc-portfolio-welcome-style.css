@@ -98,6 +98,7 @@ img:active {
 }
 svg {
   position: absolute;
+  z-index: 6;
   transform: scale(.15);
   transform-origin: bottom;
   bottom: 1rem;
