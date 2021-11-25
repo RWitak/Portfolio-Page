@@ -7,6 +7,7 @@ root, body {
 }
 
 #welcome-section {
+  position: relative;
   height: 100vh;
   width: 100%;
 /* 
@@ -28,8 +29,9 @@ root, body {
   flex-direction: column;
   align-items: stretch;
   justify-content: space-around;
-  z-index: 0;
+  z-index: 5;
   user-select: none;
+  box-shadow: var(--main-dark) 0 0 5px 1px;
 }
 
 #welcome-grid {
