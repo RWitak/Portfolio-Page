@@ -1,0 +1,32 @@
+@import "colors.css";
+@import "sizes.css";
+
+#links {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: none;
+    justify-content: center;
+}
+
+.contact-symbol {
+    margin: 1rem;
+}
+
+#contact a {
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+#mail a {
+    color: #c71610;
+    font-weight: normal;
+}
+
+#github a {
+    color: black;
+}
+
+#linkedin a {
+    color: #0e768a;
+}

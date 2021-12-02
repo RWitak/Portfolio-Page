@@ -2,6 +2,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/fcc-portfolio-welcome-style.css">
     <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/contact.css">
 </head>
 
 <body>
@@ -12,7 +13,7 @@
         <div id="navlinks">
             <a href="#welcome-section" class="navlink">TOP</a>
             <a href="#projects" class="navlink">PROJECTS</a>
-            <a href="#profile-link" class="navlink">BOTTOM</a>
+            <a href="#contact" class="navlink">CONTACT</a>
         </div> 
     </nav>
     <div class="parallax-container">
@@ -80,7 +81,7 @@
                         </figure>
                     </div>
                     <div class="project-tile">
-                        <a href="https://codepen.io/RWitak/pens/public" target="_blank" rel="noopener" id="profile-link">CodePen Websites</a>
+                        <a href="https://codepen.io/RWitak/pens/public" target="_blank" rel="noopener">CodePen Websites</a>
                         <figure>
                             <figcaption>My web dev collection.</figcaption>
                             <div class="tech-info">HTML5/CSS</div>
@@ -88,7 +89,7 @@
                         </figure>
                     </div>
                     <div class="project-tile">
-                        <a href="http://www.example.org" target="_blank" rel="noopener" id="profile-link">Game of Life (deadlink)</a>
+                        <a href="http://www.example.org" target="_blank" rel="noopener">Game of Life (deadlink)</a>
                         <figure>
                             <figcaption>Interactive implementation of Conway's Game of Life</figcaption>
                             <div class="tech-info">Python</div>
@@ -99,13 +100,17 @@
             </section>
 
             <section id="contact">
-                <div id="social-links">
-                    <a href="linkedin.com/in/rafael-witak-b1a213227"><i class="fab fa-linkedin"></i></a>
-                </div> 
-                </div>
-                <div id="mail">
-                    <a href="https://mailhide.io/e/bhUEtsEK" onclick="popup=window.open('https://mailhide.io/e/bhUEtsEK','mailhidepopup','width=580,height=635'); return false;">r......@gmail.com</a>
-                    (Click to show full address)
+                <h2>Find me online:</h2>
+                <div id=links>
+                    <div id="linkedin" class="contact-symbol">
+                        <a href="https://www.linkedin.com/in/rafael-witak-b1a213227" class="fab fa-linkedin"></a>
+                    </div>
+                    <div id="mail" class="contact-symbol">
+                        <a href="https://mailhide.io/e/bhUEtsEK" class="fa fa-envelope" onclick="popup=window.open('https://mailhide.io/e/bhUEtsEK','mailhidepopup','width=580,height=635'); return false;"></a>
+                    </div>
+                    <div id="github" class="contact-symbol">
+                        <a href="https://github.com/RWitak" class="fa fa-github"></a>
+                    </div>
                 </div>
             </section>
         </main>
