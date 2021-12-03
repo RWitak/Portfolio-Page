@@ -49,13 +49,13 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(transparent, var(--light-50), var(--unimportant-50), transparent);
+    background: linear-gradient(transparent, transparent, var(--light-50), transparent), linear-gradient(black, transparent);
         /* linear-gradient(rgba(255, 255, 255, 0.8),
         rgba(255, 255, 255, 0.6),
         rgba(255, 255, 255, 0.2),
                         rgba(255, 255, 255, 0.1)); */
     margin: 39px;
-    border-radius: 15%;
+    border-radius: 1rem;
     border: 1px solid var(--lighter-highlight);
     text-align: center;
     padding: 1rem .3rem;
@@ -83,8 +83,7 @@
     margin: 1rem 0;
     background-repeat: no-repeat;
     background-position: center center; 
-    background-size: cover;
-    box-shadow: var(--main-dark) 1px 1px 5px;
+    background-size: contain;
 }
 
 .tech-info {
