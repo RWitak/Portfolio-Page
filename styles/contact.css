@@ -1,6 +1,12 @@
 @import "colors.css";
 @import "sizes.css";
 
+#contanct-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 #links {
     display: flex;
     width: 100%;
