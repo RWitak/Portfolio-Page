@@ -9,7 +9,7 @@
 }
 
 #projects-heading {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Anton, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     font-size: xx-large;
     width: 66%;
@@ -66,10 +66,13 @@
     color: white;
 }
 .project-tile a {
-    color: var(--main-contrast);
-    text-shadow: -1px 1px var(--lighter-highlight);
-    font-size: larger;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--main-light);
+    text-shadow: 0 .1rem .2rem var(--main-dark);
+    font-size: xx-large;
+    /* font-weight: bold; */
+    font-family: 'Anton', sans-serif;
+    font-size: x-large;
+
 }
 
 .project-tile figure {
@@ -91,5 +94,6 @@
 }
 
 .tech-info {
+    font-family: 'Arsenal', sans-serif;
     font-style: italic;
 }

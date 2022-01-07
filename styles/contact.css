@@ -3,8 +3,9 @@
 
 #contanct-heading {
     text-align: center;
+    margin-top: 1rem;
     font-size: 2rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Anton", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 #links {
@@ -13,6 +14,7 @@
     height: auto;
     flex-wrap: none;
     justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .contact-symbol {

@@ -1,6 +1,6 @@
 @import "colors.css";
 @import "sizes";
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arsenal:ital,wght@0,700;1,400&family=Rubik&display=swap');
 
 * {
     margin: 0;
@@ -20,14 +20,43 @@ body {
     top: 0;
     margin: 0;
     z-index: 10;
-    /* height: 0; */
     color: var(--main-unimportant);
-    background: linear-gradient(rgba(255, 255, 255, .5), transparent);
+    background-image: webkit-radial-gradient(
+        top,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0.3) 50%,
+        rgba(255, 255, 255, 0.15) 65%,
+        rgba(255, 255, 255, 0.075) 75.5%,
+        rgba(255, 255, 255, 0.037) 82.85%,
+        rgba(255, 255, 255, 0.019) 88%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    background-image: conic-gradient(
+        from 90deg at 60%,
+        transparent,
+        transparent,
+        rgba(255, 255, 255, 0.25), 
+        rgba(255, 255, 255, 0.75)
+        /* at top,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0.3) 50%,
+        rgba(255, 255, 255, 0.15) 65%,
+        rgba(255, 255, 255, 0.075) 75.5%,
+        rgba(255, 255, 255, 0.037) 82.85%,
+        rgba(255, 255, 255, 0.019) 88%,
+        rgba(255, 255, 255, 0) 100% */
+    );
 }
 
 #logo {
     margin-inline: 10px;
-    font-family: 'Passion One', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Rubik', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, .75), rgba(255, 255, 255, .5));
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+    font-size: 10vmin;
 }
 
 #navlinks {
@@ -36,21 +65,8 @@ body {
     margin-right: 10px;
     flex-grow: 1;
     justify-content: right;
+    font-family: Rubik, sans-serif;
     display: flex;
-}
-
-h1 {
-    text-align: center;
-    font-size: 10vmin;
-    color: white;
-}
-
-.inverted {
-    display: inline;
-    color: transparent;
-    background-image: linear-gradient(blue, red);
-    background-clip: text;
-    -webkit-background-clip: text;
 }
 
 nav {
@@ -69,7 +85,7 @@ nav a {
     color: var(--main-contrast);
     font-weight: bold;
     text-decoration: none;
-    padding: 1% 5%;
+    padding: 0% 5%;
 }
 
 #separator-v {
@@ -82,6 +98,7 @@ nav a {
 
 footer {
     text-align: end;
+    margin: .5rem;
 }
 
 @media (min-width: 0px) {}
