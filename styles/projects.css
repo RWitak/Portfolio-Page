@@ -13,7 +13,7 @@
     text-align: center;
     font-size: xx-large;
     width: 66%;
-    margin: auto;
+    margin: 0 auto;
     background-color: white;
     top: 0;
     box-shadow: inset black 0 3px 5px;
@@ -27,6 +27,9 @@
 
 #projects {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
     width: 100%;
     min-height: 100%;
     z-index: 1;
@@ -37,28 +40,26 @@
 
 .project-tiles {
     position: relative;
-    width: 100%;
-    margin: auto;
+    height: max-content;
+    width: 100vw;
+    margin: 4rem auto;
     display: grid;
-    /* gap: 1rem; */
-    grid-template-columns: repeat(auto-fill, 360px);
-    justify-content: space-evenly;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, calc(320px + 2rem));
+    justify-content: space-around;
 }
 
 .project-tile {
+    width: min-content;
+    height: calc(360px + 1rem);
     min-width: 15rem;
     max-width: 80vw;
-    min-height: 10rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    background: linear-gradient(transparent, transparent, var(--light-50), transparent), linear-gradient(black, transparent);
-        /* linear-gradient(rgba(255, 255, 255, 0.8),
-        rgba(255, 255, 255, 0.6),
-        rgba(255, 255, 255, 0.2),
-                        rgba(255, 255, 255, 0.1)); */
-    margin: 39px;
+    background: linear-gradient(rgba(0,0,0,.75), transparent, var(--light-50), transparent), 
+                linear-gradient(rgba(0,0,0,.95), rgba(0,0,0,.75), transparent);
+    margin: 2rem auto;
     border-radius: 1rem;
     border: 1px solid var(--lighter-highlight);
     text-align: center;
@@ -72,32 +73,38 @@
     /* font-weight: bold; */
     font-family: 'Anton', sans-serif;
     font-size: x-large;
-
 }
-
 .project-tile figure {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     height: 100%;
     width: auto;
 }
-
 .project-tile figcaption {
     font-family: 'Arsenal', sans-serif;
     font-style: italic;
+    font-size: large;
+    flex: 0 1;
+    margin: .5rem 1rem;
 }
 
 .proj-img {
-    height: 20rem;
-    width: 12rem;
-    max-width: 70vw;
-    margin: 1rem 0;
+    flex-grow: 1;
+    justify-self: stretch;
+    width: 320px;
+    height: auto;
+    max-height: 180px;
     background-repeat: no-repeat;
     background-position: center center; 
-    background-size: contain;
+    background-size: fill;
+    margin: 1rem;
 }
 
 .tech-info {
     font-family: 'Arsenal', sans-serif;
+    font-style: normal;
+    flex-grow: 0;
+    margin-top: .5rem;
 }
