@@ -83,6 +83,11 @@
     width: auto;
 }
 
+.project-tile figcaption {
+    font-family: 'Arsenal', sans-serif;
+    font-style: italic;
+}
+
 .proj-img {
     height: 20rem;
     width: 12rem;
@@ -95,5 +100,4 @@
 
 .tech-info {
     font-family: 'Arsenal', sans-serif;
-    font-style: italic;
 }

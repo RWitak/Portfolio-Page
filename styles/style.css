@@ -1,6 +1,6 @@
 @import "colors.css";
 @import "sizes";
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arsenal:ital,wght@0,700;1,400&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arsenal:ital,wght@0,700;1,400&family=Rubik:wght@500;800&display=swap');
 
 * {
     margin: 0;
@@ -51,12 +51,13 @@ body {
 #logo {
     margin-inline: 10px;
     font-family: 'Rubik', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 800;
     color: transparent;
     background-image: linear-gradient(rgba(255, 255, 255, .75), rgba(255, 255, 255, .5));
     background-clip: text;
     -webkit-background-clip: text;
     text-align: center;
-    font-size: 10vmin;
+    font-size: 4rem;
 }
 
 #navlinks {
@@ -82,8 +83,9 @@ nav a {
     cursor: pointer;
     display: block;
     white-space: nowrap;
+    font-family: 'Rubik', sans-serif;
+    font-weight: medium;
     color: var(--main-contrast);
-    font-weight: bold;
     text-decoration: none;
     padding: 0% 5%;
 }
@@ -99,6 +101,8 @@ nav a {
 footer {
     text-align: end;
     margin: .5rem;
+    opacity: 80%;
+    font-family: 'Arsenal', serif;
 }
 
 @media (min-width: 0px) {}

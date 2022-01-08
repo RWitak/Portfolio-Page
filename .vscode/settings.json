@@ -1,3 +1,5 @@
 {
-    "editor.lineNumbers": "off"
+    "editor.lineNumbers": "off",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs":"active"
 }
