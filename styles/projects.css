@@ -66,7 +66,7 @@
     padding: 1rem .3rem;
     color: white;
 }
-.project-tile a {
+.project-title {
     color: var(--main-light);
     text-shadow: 0 .1rem .2rem var(--main-dark);
     font-size: xx-large;
