@@ -89,7 +89,7 @@
     flex: 0 1;
     margin: .5rem 1rem;
 }
-figure a {
+.proj-img-anchor {
     display: flex;
     width: 320px;
     height: 180px;
