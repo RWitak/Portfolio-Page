@@ -124,6 +124,10 @@
     background-image: url('../thumbnails/boost2simple1.png');
     background-size: contain;
 }
+#pens-img {
+    background-image: url('../thumbnails/FCC-portfolio.jpg');
+    background-size: contain;
+}
 
 .tech-info {
     font-family: 'Arsenal', sans-serif;
