@@ -51,7 +51,6 @@
 
 .project-tile {
     width: min-content;
-    height: calc(360px + 1rem);
     min-width: 15rem;
     max-width: 80vw;
     display: flex;
@@ -93,7 +92,7 @@
     display: flex;
     width: 320px;
     height: 180px;
-    margin: 1rem;
+    padding: 1rem;
 }
 
 .proj-img {
@@ -127,6 +126,14 @@
 #pens-img {
     background-image: url('../thumbnails/FCC-portfolio.jpg');
     background-size: contain;
+}
+#maze-img {
+    background-image: url('../thumbnails/MazeProcessing.jpg');
+    background-size: contain;
+}
+#meteor-img {
+    background-image: url('../thumbnails/PlanetMeteor_small.jpg');
+    background-size: contain;    
 }
 
 .tech-info {

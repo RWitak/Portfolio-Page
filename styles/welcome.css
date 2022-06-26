@@ -65,7 +65,7 @@ figure {
   padding: 0;
   margin: 0;
 }
-img {
+#avatar-img {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -77,20 +77,21 @@ img {
   transform-origin: center 35%;
   background: none;
   transform: translateZ(1px);
-
   transition-property: all;
-  transition-delay: 1s;
-  transition-duration: 1.2s;
-  transition-timing-function: cubic-bezier(0.6, 0.01, 0.9, .02);
   
   filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .7));
 }
-img:active {
+#avatar-img.way-up {
   transform: rotate(180deg);
   transition-duration: .2s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
-  filter: drop-shadow(-2px -2px 3px rgba(0, 0, 0, .7));
+}
+#avatar-img.way-down {
+  transform: rotate(0deg);
+  transition-duration: 1.2s;
+  transition-timing-function: cubic-bezier(0.6, 0.01, 0.9, .02);
+  transition-delay: 1s;
 }
 
 #keyroll {

@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/welcome.css">
@@ -21,7 +23,7 @@
                     <h1 id="title">RWitak</h1>
                     <figure id="avatar-fig">
                         <a id="keyroll" target="_blank" alt="look!" href="https://youtu.be/Uj1ykZWtPYI">
-                            <svg alt="There's a keyhole, let's look inside!" viewbox="0 0 450 600"
+                            <svg alt="There's a keyhole, let's look inside!" viewBox="0 0 450 600"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g id="Layer_1">
                                     <ellipse stroke="null" ry="182" rx="182" id="svg_1" cy="182.5" cx="225.00001"
@@ -33,13 +35,15 @@
 
                             </svg>
                         </a>
-                        <img src='avataaars (1).svg' alt="My avatar with his weird facial expression."
+                        <img id="avatar-img" src='avataaars (1).svg' alt="My avatar with his weird facial expression."
                             draggable="false" />
                     </figure>
                     <div id="vertical-sep"></div>
                     <div id="welcome-text">"Everything worth doing<br>Is worth doing well!"<br>
                         <br>...on the other hand <br>I'm not a designer,<br>so just tell me if this is ugly.
-                        <br> <br> Add "Go to Portfolio"-Message to bottom of this screen?
+                        <!--
+                            <br> <br> Add "Go to Portfolio"-Message to bottom of this screen?
+                        -->
                     </div>
                 </div>
             </section>
@@ -55,17 +59,6 @@
 
                 <div class="project-tiles">
                     <div class="project-tile">
-                        <a class="project-title" href="https://rwitak.github.io/babymaus-homepage.github.io/" target="_blank" rel="noopener">Babymaus Homepage</a>
-                        <figure>
-                            <figcaption>A tongue-in-cheek fanpage of "Babymaus".
-                                <div class="tech-info">HTML5/CSS/Bootstrap</div>
-                            </figcaption>
-                            <a class="proj-img-anchor" href="https://rwitak.github.io/babymaus-homepage.github.io/">
-                                <div class="proj-img" id="bbm-hp-img"></div>
-                            </a>
-                        </figure>
-                    </div>
-                    <div class="project-tile">
                         <a class="project-title" href="https://github.com/RWitak/SpotiFylter" target="_blank" rel="noopener">SpotiFylter</a>
                         <figure>
                             <figcaption>Fine-tune your Spotify playback with graphical audio feature controls.
@@ -77,13 +70,13 @@
                         </figure>
                     </div>
                     <div class="project-tile">
-                        <a class="project-title" href="https://github.com/RWitak/boost2simple" target="_blank" rel="noopener">boost2simple</a>
+                        <a class="project-title" href="https://www.planetmeteor.com" target="_blank" rel="noopener">PlanetMeteor.com</a>
                         <figure>
-                            <figcaption>Convert BoostNotes to SimpleNotes with this Windows GUI/CLI tool.
-                                <div class="tech-info">Python/Tk/JSON</div>
+                            <figcaption>Homepage of "Kulturverein METEOR".
+                                <div class="tech-info">HTML5/CSS/JS/Bootstrap</div>
                             </figcaption>
-                            <a class="proj-img-anchor" href="https://github.com/RWitak/boost2simple">
-                                <div class="proj-img" id="b2s-img"></div>
+                            <a class="proj-img-anchor" href="https://www.planetmeteor.com">
+                                <div class="proj-img" id="meteor-img"></div>
                             </a>
                         </figure>
                     </div>
@@ -99,35 +92,35 @@
                         </figure>
                     </div>
                     <div class="project-tile">
+                        <a class="project-title" href="https://github.com/RWitak/MazeProcessing" target="_blank" rel="noopener">MazeProcessing</a>
+                        <figure>
+                            <figcaption>Generate random labyrinth (with every square reachable) and view in 3D. 
+                                <div class="tech-info">Java/Processing/TDD</div>
+                            </figcaption>
+                            <a class="proj-img-anchor" href="https://github.com/RWitak/MazeProcessing">
+                                <div class="proj-img" id="maze-img"></div>
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="project-tile">
+                        <a class="project-title" href="https://github.com/RWitak/boost2simple" target="_blank" rel="noopener">boost2simple</a>
+                        <figure>
+                            <figcaption>Convert BoostNotes to SimpleNotes with this Windows GUI/CLI tool.
+                                <div class="tech-info">Python/Tk/JSON</div>
+                            </figcaption>
+                            <a class="proj-img-anchor" href="https://github.com/RWitak/boost2simple">
+                                <div class="proj-img" id="b2s-img"></div>
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="project-tile">
                         <a class="project-title" href="https://codepen.io/RWitak/pens/public" target="_blank" rel="noopener">CodePen Websites</a>
                         <figure>
-                            <figcaption>My web dev collection.
+                            <figcaption>My <b>freecodecamp</b> web dev collection.
                                 <div class="tech-info">HTML5/CSS</div>
                             </figcaption>
                             <a class="proj-img-anchor" href="https://codepen.io/RWitak/pens/public">
                                 <div class="proj-img" id="pens-img"></div>
-                            </a>
-                        </figure>
-                    </div>
-                    <div class="project-tile">
-                        <a class="project-title" href="https://github.com/RWitak/pygame_of_life" target="_blank" rel="noopener">Game of Life</a>
-                        <figure>
-                            <figcaption>Interactive implementation of Conway's Game of Life
-                                <div class="tech-info">Python/pygame</div>
-                            </figcaption>
-                            <a class="proj-img-anchor" href="https://github.com/RWitak/pygame_of_life">
-                                <div class="proj-img" id="gol-img"></div>
-                            </a>
-                        </figure>
-                    </div>
-                    <div class="project-tile">
-                        <a class="project-title" href="https://github.com/RWitak/py_labyrinth_maker" target="_blank" rel="noopener">LaPYrinth</a>
-                        <figure>
-                            <figcaption>Generate random labyrinth by turtle (with every square reachable). 
-                                <div class="tech-info">Python/turtle</div>
-                            </figcaption>
-                            <a class="proj-img-anchor" href="https://github.com/RWitak/py_labyrinth_maker">
-                                <div class="proj-img" id="lapyrinth-img"></div>
                             </a>
                         </figure>
                     </div>
@@ -141,10 +134,11 @@
                         <a href="https://www.linkedin.com/in/rafael-witak-b1a213227" class="fab fa-linkedin"></a>
                     </div>
                     <div id="mail" class="contact-symbol">
-                        <a href="https://mailhide.io/e/bhUEtsEK" class="fa fa-envelope" onclick="popup=window.open('https://mailhide.io/e/bhUEtsEK','mailhidepopup','width=580,height=635'); return false;"></a>
+                        <a href="https://mailhide.io/e/bhUEtsEK" class="fa fa-envelope" 
+                        onclick="{popup=window.open('https://mailhide.io/e/bhUEtsEK','mailhidepopup','width=580,height=635'); return false;}"></a>
                     </div>
                     <div id="github" class="contact-symbol">
-                        <a href="https://github.com/RWitak" class="fa fa-github"></a>
+                        <a id="profile-link" href="https://github.com/RWitak" target="_blank" rel="noopener" class="fa fa-github"></a>
                     </div>
                 </div>
             </section>
@@ -157,5 +151,18 @@
         </footer>
     </div>
     <script src="https://kit.fontawesome.com/5606128b30.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $("#avatar-img").bind("webkitTransitionEnd mozTransitionEnd transitionend", function(){
+            $(this).addClass("way-down");
+            $(this).removeClass("way-up");
+        })
+        
+        $("#avatar-img").click(function(){
+            $(this).removeClass("way-down");
+            $(this).addClass("way-up");        
+        })
+    </script>
     <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 </body>
+</html>
